@@ -10,9 +10,7 @@ ul.topnav{
 	padding: 0;
 	overflow: hidden;
 	background-color:darkslategray;
-	position: fixed;
-	top: 0px;
-	z-index: 2;
+
 }
 
 ul.topnav li{
@@ -20,7 +18,7 @@ ul.topnav li{
 	border-right: 1px solid #333;
 }
 
-ul.topnav li a{
+ul.topnav li a,.drop-btn{
 	display: block;
 	color: aliceblue;
 	text-align: center;
@@ -32,8 +30,12 @@ ul.topnav li:last-child{
 	float: right;
 }
 
+li.drop{
+	display: inline-block;
+}
+
 ul.topnav li a.home{
-	background-color:#ED474A;
+	background-color:red;
 }
 
 li a:hover:not(.home){
@@ -41,26 +43,29 @@ li a:hover:not(.home){
 }
 
 .drop-content{
-    display:block;
-    max-width: 160px;
+    display:none;
+	position: absolute;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+ background-color: darkslategray;
+	border-top: 1px #333 solid;
     z-index: 1;
-	background-color: darkslategray
+
 
 }
 
 .drop-content a {
     color: black;
-	float: none;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+	text-align: left;
+	border-bottom: 1px #333 solid;
 }
 
 .drop-content a:hover {background-color: #f1f1f1;}
 
-.drop1:hover .drop-content{
+.drop:hover .drop-content{
 	display: block;
 }
 
