@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Booking</title>
-    <link rel="stylesheet" href="styles/fa/css/all.css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
-</head>
 <body>
 <header>
     <img src="images/movieshowheader.svg" alt="header logo">
@@ -18,7 +10,7 @@
     </div>
     <div class="ht"><i class="fa fa-ticket-alt">Movie Show</i> </div>
     <ul>
-        <li><a class="home roundbtn" href="#"><i class="fa fa-home "></i>  &ensp;  Home</a></li>
+        <li><a class="home roundbtn" href="#"><i class="fa fa-home "></i>  &ensp; Home</a></li>
         <li>
             <a class="drop-btn roundbtn" href="#"><i class="fa fa-city"></i> &ensp; City </a>
         </li>
