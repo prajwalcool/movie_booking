@@ -5,6 +5,6 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/fa/css/all.css">
-    <link rel="stylesheet" href="styles/flexslider.css">
+<!--    <link rel="stylesheet" href="styles/flexslider.css">-->
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
 </head>

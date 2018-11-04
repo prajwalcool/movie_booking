@@ -9,13 +9,5 @@ $(document).ready(function () {
         controlsContainer: "",
         animation: 'fade'
     });
-    var num = $(".menu").offset().top;
-    $(window).bind('scroll', function() {
-        if ($(window).screenTop() > num) {
-            $('.menu').addClass('sticky');
-        }
-        else {
-            $('.menu').removeClass('sticky');
-        }
-    });
 });
+

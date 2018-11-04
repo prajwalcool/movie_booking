@@ -4,26 +4,24 @@
 
 h1,*{
     font-family: raleway-regular,sans-serif;
+    margin: 0;
+    padding: 0;
 }
 a,a:hover,a:active{text-decoration: none}
 body{
     background-color:#FFFFFF;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 .roundbtn{
     border-radius: 25px;
     -moz-outline-radius: 25px;
 }
-.ht{
+#header{
     background-color: #DC143C;
     color: #FFFFFF;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-}
-.ht h1{
-    margin: 0;
-    padding: 0;
-    vertical-align: center;
 }
 .menu ul{
     width: 100%;
@@ -31,17 +29,18 @@ body{
 }
 div.menu{
 	width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #99cccb;
     color: #FFFFFF;
     margin: 0;
     border-bottom: #59ABA9 1px solid;
 	border-radius: 0 0 3px 3px;
 }
-.sticky{
-    position: fixed;
-    z-index: 1030;
-}
+/*#sticker{*/
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*z-index: 5;*/
+/*}*/
 
 .menu li{
 	display: inline-block ;
@@ -82,15 +81,12 @@ div.menu{
 }
 
 .menu ul div.drop-content{
-    display:none;
+    /*display:none;*/
 	position: absolute;
     min-width: auto;
     z-index: 1000;
     opacity: 0;
-    height: 0;
-    overflow: hidden;
-	transition: opacity 5s ease-in;
-    transition: height 50s ease-in;
+    transition: opacity .2s ease .1s;
     padding: 1vh auto;
 }
 
@@ -101,9 +97,12 @@ div.menu{
     display: inline-block;
 	text-align: left;
     margin-top: 5px;
+    height: 0;
+    z-index: 1000;
     margin-left: 25%;
     padding: 10vh 20vw;
-	border: 1px #59ABA9 solid;
+    transition: height 1s ease ;
+    border: 1px #59ABA9 solid;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
 }
@@ -115,14 +114,98 @@ div.menu{
 }
 
 .drop:hover .drop-content{
-	display: block;
-    height: auto;
     opacity: 1;
+}
+.drop:hover .drop-content a{
+    height: auto;
     overflow: visible;
 }
 #intro{
     background-color: #E3DEBF;
     color: dimgrey;
+    width: 100%;
+}
+
+
+.flexslider a:active,
+.flexslider a:focus  { outline: none; }
+.slides,
+.flex-control-nav,
+.flex-direction-nav { margin: 0; padding: 0; list-style: none; }
+.slides li { margin: 0; padding: 0;}
+
+/* Necessary Styles */
+.flexslider {
+    position: relative;
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+}
+.flexslider .slides { zoom: 1; }
+.flexslider .slides > li { position: relative; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+/* Suggested container for slide animation setups. Can replace this with your own */
+.flex-container { zoom: 1; position: relative; }
+
+/* Clearfix for .slides */
+.slides:before,
+.slides:after {
+    content: " ";
+    display: table;
+}
+.slides:after {
+    clear: both;
+}
+/* Direction Navigation
+--------------------------------------------------------------- */
+.flex-direction-nav a {
+    display: block;
+    width: 40px;
+    height: 66px;
+    margin: -33px 0 0 0;
+    background-color: #1f2024;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+
+    /* hide text */
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.flex-direction-nav a:hover { background-color: #0F9095; }
+
+.flex-direction-nav .flex-next {
+    right: 0px;
+    background: #1f2024 url(../images/direction-nav-right.png) no-repeat 47% 50%;
+    position: absolute;
+
+    border-radius: 3px 0 0 3px;
+}
+.flex-direction-nav .flex-prev {
+    left: 0px;
+    background: #1f2024 url(../images/direction-nav-left.png) no-repeat 53% 50%;
+    position: absolute;
+
+    border-radius: 0 3px 3px 0;
+}
+.flexslider:hover .flex-next,
+.flexslider:hover .flex-prev { opacity: 1; }
+.flex-direction-nav .flex-disabled {
+    opacity: .3 !important;
+    filter: alpha(opacity=30);
+    cursor: default;
 }
 .flexslider{
     background: transparent;
@@ -255,8 +338,42 @@ footer li{
 .footer-nav a:hover,.footer-nav a:active{
     color:black;
 }
+.card{
+    width: 15rem !important;
+    border-radius: .75rem;
+}
+.card .card-body{
+    padding: .5rem;
+}
+.card img{
+    width: 100%;
+    border-radius: .75rem .75rem 0 0;
+    box-shadow: 0 3px 8px 2px rgba(0,0,0,0.2);
+}
 
+#intro.carousel span{
+    color: black !important;
+}
 
+.car-next{
+    background: black url("../images/direction-nav-right.png") no-repeat 47% 50%;
+    position: absolute;
+    right: 0;
+    width:45px;
+    height:50px;
+    border-radius: 3px 0 0 3px;
+}
+.car-prev{
+    background: black url("../images/direction-nav-left.png") no-repeat 47% 50%;
+    position: absolute;
+    left: 0;
+    width:45px;
+    height:50px;
+    border-radius: 0 3px 3px 0;
+}
+.carousel{
+    transition: transform 2s ease, opacity .5s ease-out
+}
 @media screen and (max-width: 600px){
     .menu li.right,
     .menu li {float: none;}
