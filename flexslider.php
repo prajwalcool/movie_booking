@@ -22,7 +22,7 @@
                             <p>Movies the world is loving. Get your tickets right NOW!</p>
                         </div>
                         <div class="slider-image">
-                            <iframe width="883" height="332" src="https://www.youtube.com/embed/Z1Zf7X7BrOs?start=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  width="883" height="332" src="https://www.youtube.com/embed/Z1Zf7X7BrOs?start=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

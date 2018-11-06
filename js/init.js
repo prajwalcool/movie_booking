@@ -7,7 +7,7 @@ $(document).ready(function () {
         directionNav: true,
         controlNav: false,
         controlsContainer: "",
-        animation: 'fade'
+        animation: 'slide'
     });
 });
 

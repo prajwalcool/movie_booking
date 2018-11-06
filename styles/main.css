@@ -7,6 +7,10 @@ h1,*{
     margin: 0;
     padding: 0;
 }
+#h-overlay{
+    position: relative;
+    z-index: -50;
+}
 a,a:hover,a:active{text-decoration: none}
 body{
     background-color:#FFFFFF;
@@ -15,7 +19,7 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
-.roundbtn{
+.round-btn{
     border-radius: 25px;
     -moz-outline-radius: 25px;
 }
@@ -23,85 +27,58 @@ body{
     background-color: #DC143C;
     color: #FFFFFF;
 }
-.menu ul{
-    width: 100%;
-	list-style-type: none;
-}
-div.menu{
-	width: 100%;
+.menu{
     /*overflow: hidden;*/
     background-color: #99cccb;
+    background-attachment: scroll;
     color: #FFFFFF;
-    margin: 0;
     border-bottom: #59ABA9 1px solid;
 	border-radius: 0 0 3px 3px;
 }
-/*#sticker{*/
-    /*position: sticky;*/
-    /*top: 0;*/
-    /*z-index: 5;*/
-/*}*/
-
-.menu li{
-	display: inline-block ;
-    width: 8.3333%;
-    height: auto;
-    margin: 12px;
-}
-
-.menu li a{
-	display: block;
+.round-btn{
 	background-color: #FFFFFF;
     color: #59ABA9;
-	text-decoration: none;
     border: 1px solid #59ABA9;
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    box-sizing: content-box;
-    text-align: center;
     box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
     font-size: 1vw;
     transition: background-color .2s ease-in;
 }
-
-.fright{
-	float: right;
-}
-
-
-.menu li a.home{
+.round-btn.home{
 	background-color:#DC143C;
     color: #FFFFFF;
 }
-
-.menu li a:hover:not(.home){
+.round-btn:hover:not(.home){
 	background-color: #59ABA9;
     color: #FFFFFF;
 }
+#close{
+    border: 1px solid #DC143C;
+    background: white;
+    color: #DC143C;
+}
+#close:hover{
+    background: #DC143C;
+    color: white;
+}
+.nav-pills .nav-link{
+    border-radius: 4rem!important;
+    padding: .5rem 2rem !important;
+}
 
-.menu ul div.drop-content{
-    /*display:none;*/
-	position: absolute;
-    min-width: auto;
+             /*DROP DOWN*/
+
+/*.drop-content{
+    !*display:none;*!
     z-index: 1000;
     opacity: 0;
-    transition: opacity .2s ease .1s;
     padding: 1vh auto;
 }
 
 .drop-content a {
-    text-decoration: none;
     background-color: #FFFFFF;
     color: #59ABA9;
-    display: inline-block;
-	text-align: left;
-    margin-top: 5px;
     height: 0;
     z-index: 1000;
-    margin-left: 25%;
-    padding: 10vh 20vw;
-    transition: height 1s ease ;
     border: 1px #59ABA9 solid;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
@@ -119,7 +96,7 @@ div.menu{
 .drop:hover .drop-content a{
     height: auto;
     overflow: visible;
-}
+}*/
 #intro{
     background-color: #E3DEBF;
     color: dimgrey;
@@ -224,6 +201,20 @@ iframe{display: block;
 .slider-image{
     margin: 0 auto;
 }
+/*.slider-image {
+    position: relative;
+    padding-bottom: 56.25%; !* 16:9 *!
+    padding-top: 25px;
+    height: 0;
+}
+.slider-image iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
 img#banner-img{
     display: block;
     height: 332px;
@@ -313,7 +304,7 @@ footer .footer-nav{
 
 }
 footer .footer-nav a { color: #7B858E; }
-footer .footer-nav a:hover { color: #313131; }
+footer .footer-nav a:hover { color: #007bff }
 footer .footer-social{
     text-align: center;
     font-size: 30px;
@@ -322,7 +313,7 @@ footer ul{
     padding: 0;
 }
 footer .footer-social li a { color: #7B858E; }
-footer .footer-social li a:hover { color: #313131; }
+footer .footer-social li a:hover { color: #007bff }
 footer .copyright{
     text-align: center;
 }
