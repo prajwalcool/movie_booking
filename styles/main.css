@@ -1,9 +1,6 @@
 @import url(fonts.css);
-@import url("font-awesome/css/font-awesome.css");
-
 
 h1,*{
-    font-family: raleway-regular,sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -29,8 +26,7 @@ body{
 }
 .menu{
     /*overflow: hidden;*/
-    background-color: #99cccb;
-    background-attachment: scroll;
+    background: #99cccb scroll;
     color: #FFFFFF;
     border-bottom: #59ABA9 1px solid;
 	border-radius: 0 0 3px 3px;
@@ -42,6 +38,7 @@ body{
     box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
     font-size: 1vw;
     transition: background-color .2s ease-in;
+    margin: .5rem 1rem;
 }
 .round-btn.home{
 	background-color:#DC143C;
@@ -64,7 +61,14 @@ body{
     border-radius: 4rem!important;
     padding: .5rem 2rem !important;
 }
-
+#mtab .nav-link{
+    background-color: #FFFFFF;
+    color: #59ABA9;
+}
+#mtab .nav-link.active{
+    background-color: #59ABA9;
+    color: #FFFFFF;
+}
              /*DROP DOWN*/
 
 /*.drop-content{
@@ -164,14 +168,14 @@ body{
 .flex-direction-nav a:hover { background-color: #0F9095; }
 
 .flex-direction-nav .flex-next {
-    right: 0px;
+    right: 0;
     background: #1f2024 url(../images/direction-nav-right.png) no-repeat 47% 50%;
     position: absolute;
 
     border-radius: 3px 0 0 3px;
 }
 .flex-direction-nav .flex-prev {
-    left: 0px;
+    left: 0;
     background: #1f2024 url(../images/direction-nav-left.png) no-repeat 53% 50%;
     position: absolute;
 
@@ -227,9 +231,9 @@ img#banner-img{
     margin: 12px 8% 0;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
-#info{
+#info .row{
     padding-bottom: 42px;
-    max-width: 65%;
+    max-width: 75%;
     margin: 0 auto;
 }
 #info h2{

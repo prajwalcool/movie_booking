@@ -144,19 +144,8 @@
         </div>
     </div>
 </section>
-<section id="acc-create" class="m-0 pt-5 pb-5">
-    <div class="row">
-        <div class="col offset-1">
-            <h1><a href="#">Create your account now!</a></h1>
-            <p>Join the world of Movie Buzz!!</p>
-        </div>
-        <div class="col offset-3 offset-lg-6 mt-4">
-            <a id="su-btn" href="#" class="btn btn-lg">Sign Up Now</a>
-        </div>
-    </div>
-</section>
 
-<section id="info">
+<section id="info" class="jumbotron p-0 pt-5 mb-0">
     <div class="row">
         <div class="col-sm-3">
             <h2>Clean & Modern.</h2>
@@ -181,6 +170,19 @@
         </div>
     </div>
 </section>
+<section id="acc-create" class="m-0 pt-5 pb-5">
+    <div class="row">
+        <div class="col offset-1">
+            <h1><a href="#">Create your account now!</a></h1>
+            <p>Join the world of Movie Buzz!!</p>
+        </div>
+        <div class="col offset-3 offset-lg-6 mt-4">
+            <a id="su-btn" href="#" class="btn btn-lg" data-toggle="modal" data-target="#signup">Sign Up Now</a>
+        </div>
+    </div>
+</section>
+
+
 <section id="now" >
     <div class="row mb-5">
         <div id="now-head" class="col-12 text-center">
