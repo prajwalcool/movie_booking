@@ -9,7 +9,7 @@
                             <p>Movies the world is loving. Get your tickets right NOW!</p>
                         </div>
                         <div  class="slider-image">
-                            <img id="banner-img" style="margin: auto" src="images/banner4.png">
+                            <img id="banner-img" style="margin: auto" src="img/banner4.png">
                         </div>
                     </div>
                 </div>

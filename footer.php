@@ -32,7 +32,7 @@
             <p>Join the world of Movie Buzz!!</p>
         </div>
         <div class="col offset-3 offset-lg-6 mt-4">
-            <a id="su-btn" href="" class="btn btn-lg" data-toggle="modal" data-target="#signup">Sign Up Now</a>
+            <a id="su-btn" href="" class="btn btn-lg" data-toggle="modal" data-target="#sign">Sign Up Now</a>
         </div>
     </div>
 </section>
@@ -48,14 +48,13 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">You</a></li>
             </ul>
-            <hr>
             <ul class="footer-social">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-google-plus txt-red"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" title="Google+"><i class="fab fa-google-plus txt-red"></i></a></li>
+                <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" title="Skype"><i class="fab fa-skype"></i></a></li>
+                <li><a href="#" title="RSS"><i class="fa fa-rss"></i></a></li>
             </ul>
             <ul class="copyright">
                 <li>Copyright &copy; 2018 Movie Show</li>

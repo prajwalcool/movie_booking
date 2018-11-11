@@ -1,109 +1,900 @@
-
-
-
-<section class="card-columns pt-5 offset-2">
-    <div class="card">
-        <div class="card-img-top">
-            <img src="images/mv/sarkar.jpg">
-        </div>
-        <div class="card-body">
-            <div class="card-left">
-                <div class="card-title">
-                    <h4>Sarkar</h4>
-                </div>
-                <p class="card-subtitle text-black-50">U/A | Tamil</p>
-            </div>
-            <div class="card-right">
-
-            </div>
-        </div>
+<!--Carousel Wrapper-->
+<div id="now" class="mv-slides container-fluid">
+    <div class="pt-4 pb-2 text-center">
+        <h3>Kannada</h3>
     </div>
-    <div class="card cas">
-        <div class="card-img-top">
-            <img src="images/mv/96.jpg">
+    <hr>
+    <div id="kan" class="carousel slide carousel-multi-item mb-3" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top">
+            <a class="btn-floating card-prev " href="#kan" data-slide="prev"><i class="fa fa-chevron-left "></i></a>
+            <a class="btn-floating card-next " href="#kan" data-slide="next"><i class="fa fa-chevron-right "></i></a>
         </div>
-        <div class="card-body">
-            <div class="card-left">
-                <div class="card-title">
-                    <h4>96</h4>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#kan" data-slide-to="0" class="active"></li>
+            <li data-target="#kan" data-slide-to="1"></li>
+            <li data-target="#kan" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/sarkar.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Sarkar</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Tamil</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="card-subtitle text-black-50">U/A | Tamil</p>
-            </div>
-            <div class="card-right">
 
-            </div>
-        </div>
-    </div>
-    <div class="card cas">
-        <div class="card-img-top">
-            <img src="images/mv/ayogya.jpg">
-        </div>
-        <div class="card-body">
-            <div class="card-left">
-                <div class="card-title">
-                    <h4>Ayogya</h4>
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card ">
+                        <div class="card-img-top">
+                            <img src="img/mv/96.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>96</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Tamil</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="card-subtitle text-black-50">U/A | Kannada</p>
-            </div>
-            <div class="card-right">
 
-            </div>
-        </div>
-    </div>
-    <div class="card cas">
-        <div class="card-img-top">
-            <img src="images/mv/badhaai-ho.jpg">
-        </div>
-        <div class="card-body">
-            <div class="card-left">
-                <div class="card-title">
-                    <h4>Badhaai Ho</h4>
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <p class="card-subtitle text-black-50">U/A | Hindi</p>
             </div>
-            <div class="card-right">
+            <!--/.First slide-->
 
-            </div>
-        </div>
-    </div>
-    <div class="card cas">
-        <div class="card-img-top">
-            <img src="images/mv/geetha-govindam.jpg">
-        </div>
-        <div class="card-body">
-            <div class="card-left">
-                <div class="card-title">
-                    <h4>Geetha Govindam</h4>
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="card-subtitle text-black-50">U/A | Telugu</p>
-            </div>
-            <div class="card-right">
 
-            </div>
-        </div>
-    </div>
-    <div class="card cas">
-        <div class="card-img-top">
-            <img src="images/mv/the-villain.jpg">
-        </div>
-        <div class="card-body">
-            <div class="card-left">
-                <div class="card-title">
-                    <h4>The Villain</h4>
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="card-subtitle text-black-50">U/A | Kannada</p>
-            </div>
-            <div class="card-right">
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+
         </div>
+        <!--/.Slides-->
+
     </div>
-</section>
+
+</div>
+<!--/.Carousel Wrapper-->
 
 
-<section id="now" >
+<!--Carousel Wrapper-->
+<div id="now" class="mv-slides container-fluid">
+    <div class="pt-4 pb-2 text-center">
+        <h3>Hindi</h3>
+    </div>
+    <hr>
+    <div id="hin" class="carousel slide carousel-multi-item mb-3" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top">
+            <a class="btn-floating card-prev " href="#hin" data-slide="prev"><i class="fa fa-chevron-left "></i></a>
+            <a class="btn-floating card-next " href="#hin" data-slide="next"><i class="fa fa-chevron-right "></i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#kan" data-slide-to="0" class="active"></li>
+            <li data-target="#kan" data-slide-to="1"></li>
+            <li data-target="#kan" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/sarkar.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Sarkar</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Tamil</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card ">
+                        <div class="card-img-top">
+                            <img src="img/mv/96.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>96</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Tamil</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+
+        </div>
+        <!--/.Slides-->
+
+    </div>
+
+</div>
+<!--/.Carousel Wrapper-->
+
+<!--Carousel Wrapper-->
+<div id="now" class="mv-slides container-fluid">
+    <div class="pt-4 pb-2 text-center">
+        <h3>Telugu</h3>
+    </div>
+    <hr>
+    <div id="tel" class="carousel slide carousel-multi-item mb-3" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top">
+            <a class="btn-floating card-prev " href="#tel" data-slide="prev"><i class="fa fa-chevron-left "></i></a>
+            <a class="btn-floating card-next " href="#tel" data-slide="next"><i class="fa fa-chevron-right "></i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#kan" data-slide-to="0" class="active"></li>
+            <li data-target="#kan" data-slide-to="1"></li>
+            <li data-target="#kan" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/sarkar.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Sarkar</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Tamil</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card ">
+                        <div class="card-img-top">
+                            <img src="img/mv/96.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>96</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Tamil</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+
+        </div>
+        <!--/.Slides-->
+
+    </div>
+
+</div>
+<!--/.Carousel Wrapper-->
+
+<!--Carousel Wrapper-->
+<div id="now" class="mv-slides container-fluid">
+    <div class="pt-4 pb-2 text-center">
+        <h3>Tamil</h3>
+    </div>
+    <hr>
+    <div id="tam" class="carousel slide carousel-multi-item mb-3" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top">
+            <a class="btn-floating card-prev " href="#tam" data-slide="prev"><i class="fa fa-chevron-left "></i></a>
+            <a class="btn-floating card-next " href="#tam" data-slide="next"><i class="fa fa-chevron-right "></i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#kan" data-slide-to="0" class="active"></li>
+            <li data-target="#kan" data-slide-to="1"></li>
+            <li data-target="#kan" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/sarkar.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Sarkar</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Tamil</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card ">
+                        <div class="card-img-top">
+                            <img src="img/mv/96.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>96</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Tamil</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="col-md-4 float-left">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 float-left clearfix d-none d-md-block">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="img/mv/ayogya.jpg">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-left">
+                                <div class="card-title">
+                                    <h4>Ayogya</h4>
+                                </div>
+                                <p class="card-subtitle text-black-50">U/A | Kannada</p>
+                            </div>
+                            <div class="card-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+
+        </div>
+        <!--/.Slides-->
+
+    </div>
+
+</div>
+<!--/.Carousel Wrapper-->
+
+
+<section id="popular" >
     <div class="row mb-5">
-        <div id="now-head" class="col-12 text-center">
+        <div id="popular-head" class="col-12 text-center">
             <h1>NOW SHOWING</h1>
         </div>
     </div>

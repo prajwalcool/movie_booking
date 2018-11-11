@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="index.appcache">
 <body>
 <?php
 include ('head.php');
