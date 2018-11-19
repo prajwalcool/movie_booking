@@ -9,5 +9,11 @@ $(document).ready(function () {
         controlsContainer: "",
         animation: 'slide'
     });
+// $("#sup-success").modal("show");
+
+    // $( "form" ).submit(function( event ) {
+    //     event.preventDefault();
+    // });
+
 });
 

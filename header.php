@@ -34,15 +34,15 @@
 
 
 
-    <nav class="navbar navbar-expand-sm menu text-justify sticky-top " data-spy="affix">
+    <nav class="navbar navbar-expand-sm menu text-justify sticky-top " data-spy="">
         <!--    <a class="navbar-brand home" href=""><i class="fas fa-home "></i>  &ensp; Home</a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#n-c">
             <span class="navbar-toggler-icon text-info text-dark"></span>
         </button>
         <div class="collapse navbar-collapse" id="n-c">
             <ul class="navbar-nav  nav-pills">
-                <li class="nav-item "><a class="home nav-link round-btn" href="#"><i class="fas fa-home "></i>  &ensp; Home</a></li>
-                <li class="nav-item "><a class="round-btn nav-link" onclick="" href=""><i class="fas fa-film"></i> &ensp;  Movies</a></li>
+                <li class="nav-item "><a class="home nav-link round-btn" href="index.php"><i class="fas fa-home "></i>  &ensp; Home</a></li>
+                <li class="nav-item "><a class="round-btn nav-link" onclick="" href="index.php"><i class="fas fa-film"></i> &ensp;  Movies</a></li>
                 <li class="nav-item "><a class="round-btn nav-link" href="#"><i class="fa fa-info-circle"></i> &ensp; About</a></li>
                 <li class="nav-item "><a class="round-btn nav-link" href=""><i class="fa fa-shopping-cart"></i> &ensp; Cart</a></li>
             </ul>
@@ -57,85 +57,6 @@
         </ul>
     </nav>
 
-<div class="modal fade" id="sign">
-    <div class="modal-dialog cascading-modal ">
-        <div class="modal-content">
-            <div class="modal-c-tabs">
-                <ul class="nav nav-tabs md-tabs cyan tabs-2 darken-3" id="mtab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#signin" role="tab"><i class="fa fa-user mr-1"></i>
-                            Sign in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#signup" role="tab"><i class="fa fa-user-plus mr-1"></i>
-                            Sign up</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fadeIn show active" id="signin" role="tabpanel">
-                        <div class="modal-header">
-                            <h4 class="modal-title">Sign in</h4>
-                            <button type="button" class=" close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container">
-                                <form class="modal-form" action="">
-                                    <div class="md-form mb-5">
-                                        <i class="fa fa-envelope prefix grey-text"></i>
-                                        <input type="email" id="defaultForm-email" class="form-control validate">
-                                        <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-                                    </div>
 
-                                    <div class="md-form mb-4">
-                                        <i class="fa fa-lock prefix grey-text"></i>
-                                        <input type="password" id="defaultForm-pass" class="form-control validate">
-                                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-                                    </div>
-                                    <button type="submit" class="round-btn px-3 py-2"><i class="fas fa-sign-in-alt"></i> &ensp; Sign in</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" id="close" class="round-btn px-3 py-2" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="signup" role="tabpanel">
-                        <div class="modal-header">
-                            <h4 class="modal-title">Sign up</h4>
-                            <button type="button" class=" close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container">
-                                <form class="modal-form" action="">
-                                    <div class="md-form mb-5">
-                                        <i class="fa fa-user prefix grey-text fa"></i>
-                                        <input type="text" id="orangeForm-name" class="form-control validate">
-                                        <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
-                                    </div>
-                                    <div class="md-form mb-5">
-                                        <i class="fa fa-envelope prefix grey-text"></i>
-                                        <input type="email" id="orangeForm-email" class="form-control validate">
-                                        <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
-                                    </div>
 
-                                    <div class="md-form mb-4">
-                                        <i class="fa fa-lock prefix grey-text"></i>
-                                        <input type="password" id="orangeForm-pass" class="form-control validate">
-                                        <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
-                                    </div>
-                                </form>
-                            </div>
-                            <button type="submit" class="round-btn px-3 py-2"><i class="fas fa-registered"></i> &ensp; Sign Up</button>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" id="close" class="round-btn px-3 py-2" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-
-        </div>
-    </div>
-</div>
-</div>
-
+<?php include 'signupmodal.php'?>
