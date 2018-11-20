@@ -38,3 +38,10 @@ function getCertificate(){
     return $res;
 }
 //var_dump(getCertificate());
+function getTrailer(){
+    global $conn;
+    $stmt = $conn->prepare("select movie_name,trailer  from movie");
+    $stmt->execute();
+    $res = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+    return $res;
+}

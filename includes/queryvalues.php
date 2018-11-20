@@ -15,4 +15,4 @@ foreach ($language as $lang){
 }
 //var_dump($language);
 //var_dump($movieNames);
-var_dump($movieNamesByLang['Hindi']);
+//var_dump($movieNamesByLang['Hindi'][1]);
