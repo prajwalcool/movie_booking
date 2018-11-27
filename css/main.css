@@ -671,21 +671,21 @@ footer li{
     padding: .75rem 1.2rem;
     border-radius: 50%;
 }
-.card-next{
+.mv-slides .card-next{
     right: 0;
 }
-.card-prev{
+.mv-slides .card-prev{
 }
 
-.card{
+.mv-slides .card{
     width: 15rem !important;
     border-radius: .75rem;
     margin: 1rem auto .4rem;
 }
-.card .card-body{
+.mv-slides .card .card-body{
     padding: .5rem;
 }
-.card img{
+.mv-slides .card img{
     width: 100%;
     border-radius: .75rem .75rem 0 0;
     box-shadow: 0 3px 8px 2px rgba(0,0,0,0.2);

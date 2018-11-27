@@ -2,219 +2,53 @@
 <html lang="en">
 <body>
 <?php
-include ('head.php');
-include('header.php');?>
+include 'head.php';
+include 'header.php';
+$movie=$_GET['movie'];
+$show=$_GET['show'];
+$theatre=$_GET['theatre'];
+$row='A';
+?>
 
 <!--<img class="ssvg" src="img/screen.svg">-->
 <div class="screen-container">
     <div class="screen"><br><br>Screen</div>
 </div>
+
 <div class="container">
     <div id="seats" class="text-center">
         <div class="seat-title">
             First class - 100 RS
         </div>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
+        <?php
+        for($j=1;$j<=4;$j++){
+            echo '<ul>
+            <li>'.$row.'</li>';
+            for ($i=1;$i<=8;$i++){
+                echo '<li><a href="cart.php?movie='.$movie.'&theatre='.$theatre.'&show='.$show.'&row='.$row.'&seat='.$i.'">'.$i.'</a> </li>';
+            }
+            echo '</ul>';
+            $row++;
+        }
+        ?>
+
         <div class="seat-title">
             Balcony - 120 RS
         </div>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
-        <ul>
-            <li>A</li>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a> </li>
-            <li class="una"><a href="">3</a></li>
-            <li><a href="">4</a> </li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a> </li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a> </li>
-        </ul>
+        <?php
+        for($j=1;$j<=4;$j++){
+            echo '<ul>
+            <li>'.$row.'</li>';
+            for ($i=1;$i<=8;$i++){
+                echo '<li><a href="cart.php?movie='.$movie.'&show='.$show.'&row='.$row.'&seat='.$i.'">'.$i.'</a> </li>';
+            }
+            echo '</ul>';
+            $row++;
+        }
+        ?>
+
+
+
     </div>
 
 </div>
@@ -222,8 +56,8 @@ include('header.php');?>
 
 
 <?php
-include ('footer.php');
-include ('scripts.php');
+include 'footer.php';
+include 'scripts.php';
 ?>
 </body>
 </html>

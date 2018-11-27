@@ -4,16 +4,17 @@
 <?php
 //require 'includes/dbconnect.php';
 //include 'includes/functions.php';
-include 'includes/queryvalues.php';
+//include 'includes/queryvalues.php';
 session_start();
 ?>
 <?php
-include ('head.php');
-include('header.php');
-include ('flexslider.php');
-include ('movie.php');
-include ('footer.php');
-include ('scripts.php');
+include 'head.php';
+include'header.php';
+include 'cars.php';
+//include 'flexslider.php';
+//include 'movie.php';
+include 'footer.php';
+include 'scripts.php';
 ?>
 <?php
 if (is_get_request()){

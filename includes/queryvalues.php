@@ -13,6 +13,7 @@ $movieNamesByLang=[];
 foreach ($language as $lang){
     $movieNamesByLang[$lang]=getMovieNamesByLang($lang);
 }
+
 //var_dump($language);
 //var_dump($movieNames);
 //var_dump($movieNamesByLang['Hindi'][1]);
