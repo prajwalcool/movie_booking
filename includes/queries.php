@@ -39,7 +39,7 @@ function getTrailer(){
 }
 function getTheatreName(){
     global $conn;
-    $stmt = $conn->query('select m.movie_name,t.name  from movie m,theatre t,show_timings s where s.movie_id=m.movie_id and s.theatre_id=t.theatre_id');
+    $stmt = $conn->query('select m.movie_name,t.name  from movie m,theatre t,show_times s where s.movie_id=m.movie_id and s.theatre_id=t.theatre_id');
     return  $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
 }
 function getMovieId(){
@@ -49,10 +49,38 @@ function getMovieId(){
 }
 function getShowTimings($movie){
     global $conn;
-    $stmt = $conn->prepare('select s.show_id,t.theatre_id,t.name,s.start_time  from show_timings s,movie m,theatre t where m.movie_id=:movie and s.movie_id=:movie and s.theatre_id=t.theatre_id');
+    $stmt = $conn->prepare('select s.show_id,t.theatre_id,t.name,s.start_time  from show_times s,movie m,theatre t where m.movie_id=:movie and s.movie_id=:movie and s.theatre_id=t.theatre_id');
     $stmt->bindParam('movie', $movie);
     $stmt->execute();
     return $stmt->fetchAll();
 }
+
+function getTickets(){
+    global $conn;
+    $stmt = $conn->query('select * from ticket');
+    return  $stmt->fetchAll();
+}
+function getShowTimingsbyid($id){
+    global $conn;
+    $stmt = $conn->prepare('select *  from show_times where show_id=:id');
+    $stmt->bindParam('id', $id);
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+function getMoviebyid($id){
+    global $conn;
+    $stmt = $conn->prepare('select *  from movie where movie_id=:id');
+    $stmt->bindParam('id', $id);
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+function getTheatrebyid($id){
+    global $conn;
+    $stmt = $conn->prepare('select *  from theatre where theatre_id=:id');
+    $stmt->bindParam('id', $id);
+    $stmt->execute();
+    return $stmt->fetchAll();
+}
+
 //var_dump(getShowTimings(1));
 //var_dump(getDayTimings(getShowTimings(13)));

@@ -972,7 +972,7 @@
     </collation>
     <table id="244" parent="4" name="customer"/>
     <table id="245" parent="4" name="movie"/>
-    <table id="246" parent="4" name="show_timings"/>
+    <table id="246" parent="4" name="show_times"/>
     <table id="247" parent="4" name="theatre"/>
     <table id="248" parent="4" name="ticket"/>
     <column id="249" parent="244" name="user_id">

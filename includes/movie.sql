@@ -97,10 +97,10 @@ INSERT INTO `movie` (`movie_id`, `movie_name`, `certificate`, `synopsis`, `langu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `show_timings`
+-- Table structure for table `show_times`
 --
 
-CREATE TABLE `show_timings` (
+CREATE TABLE `show_times` (
   `show_id` int(10) UNSIGNED NOT NULL,
   `start_time` datetime NOT NULL,
   `movie_id` int(10) NOT NULL,
@@ -149,9 +149,9 @@ ALTER TABLE `movie`
   ADD PRIMARY KEY (`movie_id`);
 
 --
--- Indexes for table `show_timings`
+-- Indexes for table `show_times`
 --
-ALTER TABLE `show_timings`
+ALTER TABLE `show_times`
   ADD PRIMARY KEY (`theatre_id`),
   ADD KEY `movie_id` (`movie_id`,`theatre_id`);
 

@@ -44,7 +44,7 @@
                 <li class="nav-item "><a class="home nav-link round-btn" href="index.php"><i class="fas fa-home "></i>  &ensp; Home</a></li>
                 <li class="nav-item "><a class="round-btn nav-link" onclick="" href="index.php"><i class="fas fa-film"></i> &ensp;  Movies</a></li>
                 <li class="nav-item "><a class="round-btn nav-link" href="#"><i class="fa fa-info-circle"></i> &ensp; About</a></li>
-                <li class="nav-item "><a class="round-btn nav-link" href=""><i class="fa fa-shopping-cart"></i> &ensp; Cart</a></li>
+                <li class="nav-item "><a class="round-btn nav-link" href="cart.php"><i class="fa fa-shopping-cart"></i> &ensp; Cart</a></li>
             </ul>
 
         </div>
