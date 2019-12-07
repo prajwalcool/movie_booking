@@ -5,6 +5,7 @@
  * Date: 11/13/2018
  * Time: 8:24 PM
  */
+session_start();
 require 'dbconnect.php';
 include 'functions.php';
 if(is_post_request()) {
@@ -15,11 +16,15 @@ if(is_post_request()) {
     $pass = md5(test_input($_POST['pass'] ?? ''));
     $stmt->execute();
     $result = $stmt->rowCount();
-    if ($result > 0){
+    $user=$stmt->fetch();
+    var_dump($user);
+    if ($result = 1){
         unset($_POST['act'],$_POST['email'],$_POST['pass']);
-        header("location:" . $_SERVER['HTTP_REFERER'] . "?sstatus=2");
+        $_SESSION['uname']=$user['name'];
+        $_SESSION['uid']=$user['user_id'];
+        // header("location:index.php");
     }else {
         unset($_POST['act'], $_POST['email'], $_POST['pass']);
-        header("location:" . $_SERVER['HTTP_REFERER'] . "?sstatus=3");
+        // header("location:" . $_SERVER['HTTP_REFERER']);
     }
 }

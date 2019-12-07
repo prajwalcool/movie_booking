@@ -1,4 +1,7 @@
-
+<?php 
+session_start();
+var_dump($_SESSION);
+?>
 
 
 <!--<div id="sticker" class="menu container-fluid sticky-top">
@@ -51,12 +54,8 @@
         <ul class="navbar-nav  nav-pills position-relative float-right">
             <li class="nav-item ">
                 <a class="round-btn nav-link" data-toggle="modal" data-target="#sign" href="">
-                    <i class="fas fa-sign-in-alt"></i> &ensp; Sign in/Sign Up
+                    <i class="fas fa-user-alt"></i> &ensp; <?=$_SESSION['uname']?>
                 </a>
             </li>
         </ul>
     </nav>
-
-
-
-<?php include 'signupmodal.php'?>

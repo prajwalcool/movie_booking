@@ -5,34 +5,18 @@
 //require 'includes/dbconnect.php';
 //include 'includes/functions.php';
 //include 'includes/queryvalues.php';
-session_start();
-if(isset($_GET['show']) and isset($_GET['seat'])and isset($_GET['row'])){
-    include 'includes/dbconnect.php';
-    include 'includes/functions.php';
-    $stmt = $conn->prepare("insert into ticket(show_id,row,seat_no,user_id) values(:show_id,:row,:seat_no,:user_id)");
-    $stmt->bindParam(":show_id", $show_id);
-    $stmt->bindParam(":row", $row);
-    $stmt->bindParam(":seat_no", $seat_no);
-    $stmt->bindParam(":user_id", $user_id);
-    var_dump($_GET['row']);
-    $show_id=test_input($_GET['show'] ?? '');
-    $row=test_input($_GET['row'] ?? '');
-    $seat_no=test_input($_GET['seat'] ?? '');
-    $user_id=md5(test_input($_GET['user_id'] ?? ''));
-    $stmt->execute();
-    header('location:cart.php');
-}
-?>
-<?php
+// session_start();
+
 include 'head.php';
 include'header.php';
+
 ?>
 <link rel="stylesheet" href="css/cart.css">
 <section class="container">
     <h1>Events</h1>
     <?php
     include 'includes/queries.php';
-    $tickets=getTickets();
+    $tickets=getTicketsByUser($_SESSION['uid']);
     // var_dump($tickets);
     for($i=0;$i<count($tickets);$i=$i+2){
         echo '<div class="row">';
@@ -56,6 +40,12 @@ include'header.php';
                         <span>'.$stdate->format("H:iA").'</span>
                     </time>
                 </div>
+                <div class="even-date">
+                    <i class="fa fa-ticket"></i>
+                    <time>
+                        <span>'.$tickets[$i]['row'].'-'.$tickets[$i]['seat_no'].'</span>
+                    </time>
+                </div>
                 <div class="even-info">
                     <i class="fa fa-map-marker"></i>
                     <p>
@@ -63,7 +53,7 @@ include'header.php';
                         '.$th['name'].'
                     </p>
                 </div>
-                <a href="#">tickets</a>
+                <a class="cancel" href="includes/tickets.php?id='.$tickets[$i]['ticket_id'].'">cancel</a>
             </section>
         </article>';
         if(isset($tickets[$i+1])){
@@ -94,7 +84,7 @@ $st=getShowTimingsbyid($tickets[$i+1]['show_id']);
                         '.$th['name'].'
                     </p>
                 </div>
-                <a href="#">tickets</a>
+                <a class="cancel" href="includes/tickets.php?id='.$tickets[$i]['ticket_id'].'">Cancel</a>
             </section>
         </article>';
         }

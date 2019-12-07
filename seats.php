@@ -25,7 +25,7 @@ $row='A';
             echo '<ul>
             <li>'.$row.'</li>';
             for ($i=1;$i<=8;$i++){
-                echo '<li><a href="cart.php?movie='.$movie.'&theatre='.$theatre.'&show='.$show.'&row='.$row.'&seat='.$i.'">'.$i.'</a> </li>';
+                echo '<li><a href="includes/addTicket.php?movie='.$movie.'&theatre='.$theatre.'&show='.$show.'&row='.$row.'&seat='.$i.'">'.$i.'</a> </li>';
             }
             echo '</ul>';
             $row++;
@@ -40,7 +40,7 @@ $row='A';
             echo '<ul>
             <li>'.$row.'</li>';
             for ($i=1;$i<=8;$i++){
-                echo '<li><a href="cart.php?movie='.$movie.'&show='.$show.'&row='.$row.'&seat='.$i.'">'.$i.'</a> </li>';
+                echo '<li><a href="includes/addTicket.php?movie='.$movie.'&show='.$show.'&row='.$row.'&seat='.$i.'">'.$i.'</a> </li>';
             }
             echo '</ul>';
             $row++;

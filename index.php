@@ -5,7 +5,7 @@
 //require 'includes/dbconnect.php';
 //include 'includes/functions.php';
 //include 'includes/queryvalues.php';
-session_start();
+// session_start();
 ?>
 <?php
 include 'head.php';

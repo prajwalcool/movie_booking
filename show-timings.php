@@ -2,13 +2,13 @@
 <html lang="en">
 <body>
 <?php
-session_start();
 include 'head.php';
 include 'header.php';
 include 'includes/queries.php';
 if (isset($_GET['movie'])){
     $movie=$_GET['movie'];
     $count=count(getDayTimings(getShowTimings($movie)));
+    if($count != 0){
     $dates=[];
     echo '<ul class="nav nav-tabs" id="date-tabs" role="tablist">';
     $li='';
@@ -70,7 +70,10 @@ if (isset($_GET['movie'])){
         </div>';
     }
     echo '</div>';
-
+    }
+    else{
+        echo '<h1 class="text-center" >No Show Times</h1>';
+    }
 }
 ?>
 

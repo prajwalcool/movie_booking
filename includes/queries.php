@@ -55,9 +55,11 @@ function getShowTimings($movie){
     return $stmt->fetchAll();
 }
 
-function getTickets(){
+function getTicketsByUser($id){
     global $conn;
-    $stmt = $conn->query('select * from ticket');
+    $stmt = $conn->prepare('select * from ticket where user_id=:id');
+    $stmt->bindParam('id', $id);
+    $stmt->execute();
     return  $stmt->fetchAll();
 }
 function getShowTimingsbyid($id){
